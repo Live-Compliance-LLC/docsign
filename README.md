@@ -99,6 +99,29 @@ docker compose -f docker-compose.dev.yml up --build
 The app will be available at http://localhost:3000.
 Note: You will need to rebuild the image whenever you make changes to the code.
 
+#### Local Development (Non-Docker)
+
+To run the project locally without Docker:
+
+1. Install prerequisites:
+   - Ruby 3.4.2
+   - Node.js & Yarn
+   - PostgreSQL (running)
+   - System dependencies: `libvips`, `pkg-config`
+
+2. Setup the project:
+   ```sh
+   bin/setup
+   yarn install
+   ```
+
+3. Start the server:
+   ```sh
+   bundle exec foreman start -f Procfile.dev
+   ```
+
+The app will be available at http://localhost:3000.
+
 ## For Businesses
 ### Integrate seamless document signing into your web or mobile apps with DocuSeal
 
