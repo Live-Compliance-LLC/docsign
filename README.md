@@ -88,6 +88,17 @@ Run the app under a custom domain over https using docker compose (make sure you
 sudo HOST=your-domain-name.com docker compose up
 ```
 
+#### Local Development
+
+To run the project locally with Docker and build from source:
+
+```sh
+docker compose -f docker-compose.dev.yml up --build
+```
+
+The app will be available at http://localhost:3000.
+Note: You will need to rebuild the image whenever you make changes to the code.
+
 ## For Businesses
 ### Integrate seamless document signing into your web or mobile apps with DocuSeal
 
